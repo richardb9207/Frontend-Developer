@@ -1,0 +1,71 @@
+p(selector){
+    color(propiedad):red(valor);
+}(declaracion)
+
+selectores
+(universal) * {
+    margin:0,
+}
+(tipo) h1 {
+    margin:0,
+}
+(clase) .saludo {
+    margin:0,
+}
+(id) #id {
+    margin:0,
+}
+
+pseudoclases
+p:first-child(primer hijo){
+    color:white,
+}
+p:last-child(ultimo hijo){
+    color:white,
+}
+p:nth-child(n)(n hijo){
+    color:white,
+}
+
+pseudo elementos
+::need-more
+::before
+::after
+
+modelo de caja
+margin---
+    border___
+        padding===
+            elemento xxx
+
+box-sizing:boder-box; (respeta el tamaño original)
+-las apginas tienene por defecto un margin body{margin:0,}
+
+Valores Relativas y absolutas
+
+Absolutas
+cm
+px
+mm
+in
+....
+Relativas
+%
+
+displays
+block abajo del anterior <div> <p> <h1> y <ul>
+inline izquierda a derecha <span> <em> y <b>
+inline-block respeta el width y el ight 
+none oculta el elemento
+table como una tabla
+flex alinear
+grid
+
+establecer reglas
+estrucutra base
+estandares de codificacion
+evitar largas hojas de estilo
+documentacion
+
+ooccs (orientado a objetos)
+bem block element modify

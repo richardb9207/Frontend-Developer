@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <title>Header</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        background-color: #51dacf;
+        font-family: 'Muli', sans-serif;
+    }
+    .header-home {
+        background-color: #51dacf;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-home__img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    .header-home__menu--profile{
+        width: 120px;
+        display: flex;
+        align-items: center;
+    }
+    .header-home__menu ul{
+        display: none;
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        width: 100px;
+        text-align: right;
+        margin: 0px 0px 0px 8px;
+    }
+    .header-home__menu li{
+        margin: 10px 0px;
+    }
+    .header-home__menu li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .header-home__menu li a:hover{
+        text-decoration: underline;
+    }
+    .header-home__menu:hover ul, ul:hover{
+        display: block;
+    }
+    .main{
+        height: 300px;
+    }
+    .main__titulo{
+        color: white;
+        font-size: 25px;
+    }
+    .input{
+        background-color:rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 15px;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 25px;
+        padding-left: 10px;
+        width: 70%;
+        outline: none;
+    }
+    ::placeholder{
+        color: white;
+    }
+</style>
+<body>
+    <header class="header-home">
+        <img class="header-home__img" src="../assets/video.png" alt="">
+        <div class="header-home__menu">
+            <div class="header-home__menu--profile">
+                <img class="header-home__img" src="../assets/video.png" alt="">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="">Cuenta</a>
+                </li>
+                <li>
+                    <a href="">Cerrar Sesion</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <h2 class="main__titulo">¿Qué quieres ver hoy?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
+</body>
+</html>
